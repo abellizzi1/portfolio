@@ -4,61 +4,138 @@
   box-sizing: border-box;
 }
 
-
 .intro {
   height: 100vh;
-  z-index:2;
-  opacity:1;
-  transition: opacity .5s ease;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
 .intro video {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .aboutMeContainer {
-	margin-top:3350px;
+  margin-top: 3350px;
 }
 
-.aboutMeHeader{
+.aboutMeHeaderOld {
   position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 80px;
   color: white;
-  z-index:3;
-  font-family:Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  z-index: 3;
+  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+.popout {
+  font-family: Futura, sans-serif;
+  font-weight: 900;
+  font-size: 80px;
+  padding: 80px;
+  position: relative;
+  z-index: 3;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+  width: 830px;
+}
+@-webkit-keyframes ani {
+  0% {
+    transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 gray;
+    color: white;
+  }
+  30% {
+    transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 gray;
+    color: white;
+  }
+  70% {
+    transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em gray;
+    color: white;
+  }
+  100% {
+    transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em gray;
+    color: white;
+  }
+}
+@keyframes ani {
+  0% {
+    transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 gray;
+    color: white;
+  }
+  30% {
+    transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 gray;
+    color: white;
+  }
+  70% {
+    transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em gray;
+    color: white;
+  }
+  100% {
+    transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em gray;
+    color: white;
+  }
+}
+.popout span {
+  position: relative;
+  display: inline-block;
+  -webkit-animation: ani 1s infinite alternate cubic-bezier(0.86, 0, 0.07, 1);
+          animation: ani 1s infinite alternate cubic-bezier(0.86, 0, 0.07, 1);
+}
+.popout span:nth-last-child(1n) {
+  -webkit-animation-delay: -0.1666666667s;
+          animation-delay: -0.1666666667s;
+}
+.popout span:nth-last-child(2n) {
+  -webkit-animation-delay: -0.3333333333s;
+          animation-delay: -0.3333333333s;
+}
+.popout span:nth-last-child(3n) {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+.popout .spanm {
+  margin-left: 40px;
 }
 
 .aboutMeText {
-	position: relative;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 40px;
-	color: rgb(212, 212, 212);
-	text-align: center;
-	overflow-wrap:break-word;
-	z-index:3;
-	font-family: sans-serif;
-	width:80%;
-	margin-top:-5%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  overflow-wrap: break-word;
+  z-index: 3;
+  font-family: sans-serif;
+  width: 80%;
+  margin-top: -70px;
 }
 
 .projectsContainer {
-	margin-top:200px;
+  margin-top: 200px;
 }
 
 .scrollIndicator {
-	position:absolute;
-	z-index:3;
-	color:white;
-	margin-top:1%;
-	margin-left:50%;
-	transform: translate(-50%, -50%);
-	font-size:20px;
-	font-family:Franklin Gothic, Arial Bold; 
+  position: absolute;
+  z-index: 3;
+  color: white;
+  margin-top: 1%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-family: Franklin Gothic, Arial Bold;
 }
 
 section {
@@ -72,80 +149,62 @@ section h1 {
   font-size: 80px;
 }
 
-
 @keyframes move-background {
   from {
-		-webkit-transform: translate3d(0px, 0px, 0px);
-	}
-	to { 
-		-webkit-transform: translate3d(1000px, 0px, 0px);
-	}
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
 }
 @-webkit-keyframes move-background {
   from {
-		-webkit-transform: translate3d(0px, 0px, 0px);
-	}
-	to { 
-		-webkit-transform: translate3d(1000px, 0px, 0px);
-	}
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
 }
-
-@-moz-keyframes move-background {    
-	from {
-		-webkit-transform: translate3d(0px, 0px, 0px);
-	}
-	to { 
-		-webkit-transform: translate3d(1000px, 0px, 0px);
-	}
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
 }
-
-    @-webkit-keyframes move-background {
-	from {
-		-webkit-transform: translate3d(0px, 0px, 0px);
-	}
-	to { 
-		-webkit-transform: translate3d(1000px, 0px, 0px);
-	}
-}
-
-
 .background-container {
-	position: absolute;
-	overflow-x:hidden;
-	top: 0;
-	left:0;
-	bottom: 0;
-	right: 0;
-	height:10000px;
-  z-index:0;
+  position: absolute;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 10000px;
+  z-index: 0;
 }
 
 .stars {
- background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
- position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	display: block;
-  	z-index: 0;
-	
+  background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 0;
 }
 
-.twinkling{
-	width:10000px;
-	height: 100%;
-	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
-	background-size: 1000px 1000px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-    
-    -moz-animation:move-background 70s linear infinite;
-  -ms-animation:move-background 70s linear infinite;
-  -o-animation:move-background 70s linear infinite;
-  -webkit-animation:move-background 70s linear infinite;
-  animation:move-background 70s linear infinite;
-}
+.twinkling {
+  width: 10000px;
+  height: 100%;
+  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+  background-size: 1000px 1000px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  -webkit-animation: move-background 70s linear infinite;
+  animation: move-background 70s linear infinite;
+}/*# sourceMappingURL=style.css.map */
