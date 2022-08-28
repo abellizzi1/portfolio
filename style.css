@@ -46,44 +46,44 @@
 @-webkit-keyframes ani {
   0% {
     transform: translate3d(0, 0, 0);
-    text-shadow: 0em 0em 0 gray;
+    text-shadow: 0em 0em 0 purple;
     color: white;
   }
   30% {
     transform: translate3d(0, 0, 0);
-    text-shadow: 0em 0em 0 gray;
+    text-shadow: 0em 0em 0 purple;
     color: white;
   }
   70% {
     transform: translate3d(0.08em, -0.08em, 0);
-    text-shadow: -0.08em 0.08em gray;
+    text-shadow: -0.08em 0.08em purple;
     color: white;
   }
   100% {
     transform: translate3d(0.08em, -0.08em, 0);
-    text-shadow: -0.08em 0.08em gray;
+    text-shadow: -0.08em 0.08em purple;
     color: white;
   }
 }
 @keyframes ani {
   0% {
     transform: translate3d(0, 0, 0);
-    text-shadow: 0em 0em 0 gray;
+    text-shadow: 0em 0em 0 purple;
     color: white;
   }
   30% {
     transform: translate3d(0, 0, 0);
-    text-shadow: 0em 0em 0 gray;
+    text-shadow: 0em 0em 0 purple;
     color: white;
   }
   70% {
     transform: translate3d(0.08em, -0.08em, 0);
-    text-shadow: -0.08em 0.08em gray;
+    text-shadow: -0.08em 0.08em purple;
     color: white;
   }
   100% {
     transform: translate3d(0.08em, -0.08em, 0);
-    text-shadow: -0.08em 0.08em gray;
+    text-shadow: -0.08em 0.08em purple;
     color: white;
   }
 }
@@ -121,6 +121,7 @@
   font-family: sans-serif;
   width: 80%;
   margin-top: -70px;
+  line-height: 60px;
 }
 
 .projectsContainer {

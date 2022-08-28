@@ -37,7 +37,7 @@ $d: 0.08em;
 $n: 3;
 $e: cubic-bezier(0.860, 0.000, 0.070, 1.000); 
 $front: white;
-$back: gray;
+$back: purple;
 
 .popout{
 	font-family: Futura, sans-serif;
@@ -100,6 +100,7 @@ $back: gray;
       font-family: sans-serif;
       width:80%;
       margin-top:-70px;
+      line-height:60px;
   }
   
   .projectsContainer {
