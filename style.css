@@ -42,6 +42,7 @@
   margin-left: 50%;
   transform: translate(-50%, -50%);
   width: 830px;
+  margin-bottom: -70px;
 }
 @-webkit-keyframes ani {
   0% {
@@ -120,7 +121,6 @@
   z-index: 3;
   font-family: sans-serif;
   width: 80%;
-  margin-top: -70px;
   line-height: 60px;
 }
 
@@ -208,4 +208,51 @@ section h1 {
   z-index: 1;
   -webkit-animation: move-background 70s linear infinite;
   animation: move-background 70s linear infinite;
+}
+
+.projectsButton {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  border: none;
+  z-index: 3;
+  font-weight: bold;
+  padding: 20px 20px;
+  border-radius: 10px;
+  margin-top: -100px;
+  cursor: pointer;
+  color: #fff;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+.projectsButton:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: purple;
+  border-radius: 10px;
+  z-index: -2;
+}
+.projectsButton:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  transition: all 0.3s;
+  border-radius: 10px;
+  z-index: -1;
+}
+.projectsButton:hover {
+  color: #000;
+}
+.projectsButton:hover:before {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
