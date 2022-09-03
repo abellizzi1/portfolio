@@ -56,3 +56,39 @@ window.addEventListener('scroll', (event) => {
     intro.style.opacity=1;
   }
 });
+
+const studentToolsDescription = document.querySelector(".studentToolsDescription");
+const studentToolsImage = document.querySelector(".studentToolsImage");
+const projectsButtonTop = document.querySelector(".projectsButtonTop");
+projectsButtonTop.onmouseover = function () {
+  studentToolsDescription.style.opacity = 1;
+  studentToolsImage.style.opacity = 1;
+}
+projectsButtonTop.onmouseout = function () {
+  studentToolsDescription.style.opacity = 0;
+  studentToolsImage.style.opacity = 0;
+}
+
+const werqoutDescription = document.querySelector(".werqoutDescription");
+const werqoutImage = document.querySelector(".werqoutImage");
+const projectsButtonW = document.querySelector(".projectsButtonW");
+projectsButtonW.onmouseover = function () {
+  werqoutDescription.style.opacity = 1;
+  werqoutImage.style.opacity = 1;
+}
+projectsButtonW.onmouseout = function () {
+  werqoutDescription.style.opacity = 0;
+  werqoutImage.style.opacity = 0;
+}
+
+const pokemonDescription = document.querySelector(".pokemonDescription");
+const pokemonImage = document.querySelector(".pokemonImage");
+const projectsButtonP = document.querySelector(".projectsButtonP");
+projectsButtonP.onmouseover = function () {
+  pokemonDescription.style.opacity = 1;
+  pokemonImage.style.opacity = 1;
+}
+projectsButtonP.onmouseout = function () {
+  pokemonDescription.style.opacity = 0;
+  pokemonImage.style.opacity = 0;
+}
