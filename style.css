@@ -14,8 +14,8 @@
 .intro video {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .aboutMeContainer {
@@ -128,6 +128,66 @@
   margin-top: 200px;
 }
 
+.skillsContainer {
+  margin-top: 200px;
+}
+
+.popoutSkills {
+  font-family: Futura, sans-serif;
+  font-weight: 900;
+  font-size: 80px;
+  padding: 80px;
+  position: relative;
+  z-index: 3;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+  width: 620px;
+  margin-bottom: -70px;
+}
+@keyframes ani {
+  0% {
+    transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 purple;
+    color: white;
+  }
+  30% {
+    transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 purple;
+    color: white;
+  }
+  70% {
+    transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em purple;
+    color: white;
+  }
+  100% {
+    transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em purple;
+    color: white;
+  }
+}
+.popoutSkills span {
+  position: relative;
+  display: inline-block;
+  -webkit-animation: ani 1s infinite alternate cubic-bezier(0.86, 0, 0.07, 1);
+          animation: ani 1s infinite alternate cubic-bezier(0.86, 0, 0.07, 1);
+}
+.popoutSkills span:nth-last-child(1n) {
+  -webkit-animation-delay: -0.1666666667s;
+          animation-delay: -0.1666666667s;
+}
+.popoutSkills span:nth-last-child(2n) {
+  -webkit-animation-delay: -0.3333333333s;
+          animation-delay: -0.3333333333s;
+}
+.popoutSkills span:nth-last-child(3n) {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+.popoutSkills .spanm {
+  margin-left: 40px;
+}
+
 .scrollIndicator {
   position: absolute;
   z-index: 3;
@@ -213,7 +273,7 @@ section h1 {
 .studentToolsDescription {
   position: absolute;
   color: white;
-  margin-left: 1000px;
+  margin-left: 65%;
   font-size: 40px;
   text-align: center;
   overflow-wrap: break-word;
@@ -229,9 +289,9 @@ section h1 {
 .studentToolsImage {
   position: absolute;
   z-index: 3;
-  width: 400px;
+  width: 22%;
   margin-top: -450px;
-  margin-left: 150px;
+  margin-left: 10%;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
@@ -239,7 +299,7 @@ section h1 {
 .werqoutDescription {
   position: absolute;
   color: white;
-  margin-left: 970px;
+  margin-left: 65%;
   font-size: 40px;
   text-align: center;
   overflow-wrap: break-word;
@@ -255,9 +315,9 @@ section h1 {
 .werqoutImage {
   position: absolute;
   z-index: 3;
-  width: 250px;
+  width: 15%;
   margin-top: -450px;
-  margin-left: 180px;
+  margin-left: 10%;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
@@ -265,7 +325,7 @@ section h1 {
 .pokemonDescription {
   position: absolute;
   color: white;
-  margin-left: 970px;
+  margin-left: 65%;
   font-size: 40px;
   text-align: center;
   overflow-wrap: break-word;
@@ -281,9 +341,9 @@ section h1 {
 .pokemonImage {
   position: absolute;
   z-index: 3;
-  width: 500px;
+  width: 35%;
   margin-top: -360px;
-  margin-left: 50px;
+  margin-left: 2%;
   opacity: 0;
   transition: opacity 0.5s ease;
 }

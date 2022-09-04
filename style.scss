@@ -15,7 +15,7 @@
   .intro video {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit:fill;
   }
   
   .aboutMeContainer {
@@ -105,6 +105,60 @@ $back: purple;
   
   .projectsContainer {
       margin-top:200px;
+  }
+
+  .skillsContainer {
+    margin-top:200px;
+  }
+
+  .popoutSkills{
+    font-family: Futura, sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+    padding: 80px;
+      position:relative;
+      z-index:3;
+      margin-left: 50%;
+      transform: translate(-50%, -50%);
+      width:620px;
+      margin-bottom:-70px;
+  
+    @keyframes ani{
+      0%{
+        transform: translate3d(0,0,0);
+        text-shadow: 0em 0em 0 $back;
+        color: $front;
+      }
+      30%{
+        transform: translate3d(0,0,0);
+        text-shadow: 0em 0em 0 $back;
+        color: $front;
+      }
+      70%{
+        transform: translate3d(0.08em,-0.08em,0);
+        text-shadow: -0.08em 0.08em $back;
+        color: $front;
+      }
+      100%{
+        transform: translate3d(0.08em,-0.08em,0);
+        text-shadow: -0.08em 0.08em $back;
+        color: $front;
+      }
+    }
+    span{
+      position: relative;
+      display: inline-block;
+      animation: ani $t infinite alternate $e;
+      @for $i from 1 through $n{
+        &:nth-last-child(#{$i}n){ animation-delay: -$t*$i/$n/2;}
+      }
+  
+          
+    }
+      .spanm {
+          margin-left:40px;
+      }
+    
   }
   
   .scrollIndicator {
@@ -210,7 +264,7 @@ $back: purple;
   .studentToolsDescription {
     position:absolute;
     color:white;
-    margin-left:1000px;
+    margin-left:65%;
     font-size: 40px;
     text-align: center;
     overflow-wrap:break-word;
@@ -226,9 +280,9 @@ $back: purple;
   .studentToolsImage {
     position:absolute;
     z-index:3;
-    width:400px;
+    width:22%;
     margin-top:-450px;
-    margin-left:150px;
+    margin-left:10%;
     opacity:0;
     transition: opacity .5s ease;
   }
@@ -236,7 +290,7 @@ $back: purple;
   .werqoutDescription {
     position:absolute;
     color:white;
-    margin-left:970px;
+    margin-left:65%;
     font-size: 40px;
     text-align: center;
     overflow-wrap:break-word;
@@ -252,9 +306,9 @@ $back: purple;
   .werqoutImage {
     position:absolute;
     z-index:3;
-    width:250px;
+    width:15%;
     margin-top:-450px;
-    margin-left:180px;
+    margin-left:10%;
     opacity:0;
     transition: opacity .5s ease;
   }
@@ -262,7 +316,7 @@ $back: purple;
   .pokemonDescription {
     position:absolute;
     color:white;
-    margin-left:970px;
+    margin-left:65%;
     font-size: 40px;
     text-align: center;
     overflow-wrap:break-word;
@@ -278,9 +332,9 @@ $back: purple;
   .pokemonImage {
     position:absolute;
     z-index:3;
-    width:500px;
+    width:35%;
     margin-top:-360px;
-    margin-left:50px;
+    margin-left:2%;
     opacity:0;
     transition: opacity .5s ease;
   }
