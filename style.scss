@@ -89,6 +89,56 @@ $back: purple;
 	
 }
 
+.popoutProjects{
+	font-family: Futura, sans-serif;
+	font-weight: 900;
+	font-size: 80px;
+	padding: 80px;
+    position:relative;
+    z-index:3;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    width:830px;
+    margin-bottom:-70px;
+
+	@keyframes ani{
+		0%{
+			transform: translate3d(0,0,0);
+			text-shadow: 0em 0em 0 $back;
+			color: $front;
+		}
+		30%{
+			transform: translate3d(0,0,0);
+			text-shadow: 0em 0em 0 $back;
+			color: $front;
+		}
+		70%{
+			transform: translate3d(0.08em,-0.08em,0);
+			text-shadow: -0.08em 0.08em $back;
+			color: $front;
+		}
+		100%{
+			transform: translate3d(0.08em,-0.08em,0);
+			text-shadow: -0.08em 0.08em $back;
+			color: $front;
+		}
+	}
+	span{
+		position: relative;
+		display: inline-block;
+		animation: ani $t infinite alternate $e;
+		@for $i from 1 through $n{
+			&:nth-last-child(#{$i}n){ animation-delay: -$t*$i/$n/2;}
+		}
+
+        
+	}
+    .spanm {
+        margin-left:40px;
+    }
+	
+}
+
 .popoutContact{
 	font-family: Futura, sans-serif;
 	font-weight: 900;
@@ -848,6 +898,11 @@ $back: purple;
     
   }
 
+  .popoutProjects {
+    font-size:50px;
+    width:580px;
+  }
+
   .popoutSkills {
     font-size:50px;
     width:450px;
@@ -859,8 +914,9 @@ $back: purple;
   }
 
   .aboutMeText {
-    margin-top:50px;
-    margin-bottom:-60px;
+    margin-top:40px;
+    margin-bottom:-30px;
+    line-height: 50px;
   }
 
   .studentToolsDescription {
@@ -894,8 +950,8 @@ $back: purple;
 
 @media (max-width: 615px) {
   .aboutMeText {
-    margin-top:120px;
-    margin-bottom:-100px;
+    margin-top:100px;
+    margin-bottom:-80px;
   }
 
   .columns li {
@@ -929,6 +985,103 @@ $back: purple;
   }
 }
 
-@media (max-width:475px) {
-  
+@media (max-width:470px) {
+  .popout{
+    font-size: 34px;
+    padding: 80px;
+      width:450px;
+      margin-bottom:-70px;
+      .spanm {
+          margin-left:30px;
+      }
+    
+  }
+
+  .popoutProjects {
+    font-size:34px;
+    width:445px;
+  }
+
+  .popoutSkills {
+    font-size:34px;
+    width:355px;
+  }
+
+  .popoutContact {
+    font-size:34px;
+    width:415px;
+  }
+
+  .aboutMeText {
+    font-size:22px;
+    line-height:45px;
+    margin-top:70px;
+  }
+
+  .resumeButton {
+    font-size:22px;
+    padding:15px 5px;
+    width:250px;
+  }
+
+  .projectsContainer {
+    margin-top:100px;
+  }
+
+  .projectsButtonTop {
+    font-size:25px;
+  }
+
+  .projectsButtonW {
+    font-size:25px;
+  }
+
+  .projectsButtonP {
+    font-size:25px;
+  }
+
+  .projectsGitButton {
+    font-size:25px;
+  }
+
+  .columns li {
+    font-size:25px;
+  }
+
+  .columns {
+    width:305px;
+  }
+
+  .skillsContainer {
+    margin-top:100px;
+  }
+
+  .contactText {
+    font-size:22px;
+    margin-left:15px;
+  }
+
+  .linkedinButton {
+    font-size:22px;
+    left:125px;
+    width:230px;
+    padding:10px 5px;
+  }
+
+  .gmailImage {
+    width:40px;
+  }
+
+  .linkedinImage {
+    width:40px;
+  }
+
+  .contactListContainer {
+    width:290px;
+    margin-top:-80px;
+  }
+
+  .contactContainer {
+    margin-top:200px;
+  }
 }
