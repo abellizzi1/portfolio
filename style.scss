@@ -6,6 +6,11 @@
 
   .mainContainer {
     overflow-y:hidden;
+    background-color: black;
+  }
+
+  .mainBody {
+    background-color: black;
   }
   
   .intro {
@@ -894,6 +899,7 @@ $back: purple;
     }
 
     .scrollIndicator {
+      height:0;
       font-size:0;
     }
 
@@ -943,26 +949,35 @@ $back: purple;
 
   .studentToolsDescription {
     font-size:0;
+    height:0;
+    width:0;
   }
 
   .studentToolsImage {
     width:0;
+    height:0;
   }
 
   .werqoutDescription {
+    width:0;
+    height:0;
     font-size:0;
   }
 
   .werqoutImage {
     width:0;
+    height:0;
   }
 
   .pokemonDescription {
+    width:0;
+    height:0;
     font-size:0;
   }
 
   .pokemonImage {
     width:0;
+    height:0;
   }
 
   .contactListContainer {

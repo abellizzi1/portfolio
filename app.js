@@ -5,6 +5,36 @@ const text = intro.querySelector("h1");
 const section = document.querySelector("section");
 const end = section.querySelector("h1");
 
+const scrollInd = document.querySelector(".scrollIndicator");
+const aboutMeContainer = document.querySelector(".aboutMeContainer");
+const backgroundContainer = document.querySelector(".background-container");
+const mainContainer = document.querySelector(".mainContainer");
+
+function detectMob() {
+  const toMatch = [
+      /Android/i,
+      /webOS/i,
+      /iPhone/i,
+      /iPad/i,
+      /iPod/i,
+      /BlackBerry/i,
+      /Windows Phone/i
+  ];
+  
+  return toMatch.some((toMatchItem) => {
+      return navigator.userAgent.match(toMatchItem);
+  });
+}
+
+if (detectMob()) {
+  intro.style.height = 0;
+  scrollInd.style.height=0;
+  scrollInd.style.fontSize = 0;
+  aboutMeContainer.style.marginTop = "100px";
+  backgroundContainer.style.height="2400px";
+  mainContainer.style.height="2400px";
+}
+
 //SCROLLMAGIC
 const controller = new ScrollMagic.Controller();
 
@@ -85,7 +115,6 @@ const scrollAmount = 0;
 window.addEventListener('scroll', (event) => {
   const { top } = starBackground.getBoundingClientRect();
   const starsInView = top - window.innerHeight < scrollAmount;
-  console.log(top);
   if (starsInView) {
     intro.style.opacity=0;
   }
