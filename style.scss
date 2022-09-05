@@ -101,14 +101,48 @@ $back: purple;
       font-family: sans-serif;
       width:80%;
       line-height:60px;
+      margin-bottom:-20px;
+      margin-top:20px;
+  }
+
+  .resumeButton {
+    background-color:white;
+    color:black;
+    position:relative;
+    display:block;
+    left: 50%;
+    width:270px;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    border:none;
+    z-index:3;
+    padding: 20px 20px;
+    cursor:pointer;
+    letter-spacing: .15rem;
+    transition: .2s ease;
+    text-decoration: underline;
+    text-underline-offset:5px;
+    margin-bottom:0;
+    margin-top:0;
+    font-family: sans-serif;
+  }
+
+  .resumeButton:hover {
+    box-shadow: 0 0 0 5px purple,
+                inset 0 0 0 1px #fff;
+  }
+
+  .resumeButton:active {
+    background-color:gray;
   }
   
   .projectsContainer {
-      margin-top:200px;
+      margin-top:150px;
   }
 
   .skillsContainer {
     margin-top:200px;
+    margin-bottom:0;
   }
 
   .popoutSkills{
@@ -562,4 +596,27 @@ $back: purple;
   .projectsButtonWrap {
     text-align: center;
     margin:0 auto;
+  }
+
+  .columns{
+    float: left;
+    position: relative;
+    width:500px;
+    z-index:3;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+  ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+
+  li {
+    color:white;
+    font-size:39px;
+    margin-left:30px;
+    overflow-wrap:break-word;
+      font-family: sans-serif;
   }

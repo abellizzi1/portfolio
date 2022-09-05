@@ -92,3 +92,4 @@ projectsButtonP.onmouseout = function () {
   pokemonDescription.style.opacity = 0;
   pokemonImage.style.opacity = 0;
 }
+
