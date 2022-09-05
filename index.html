@@ -6,131 +6,134 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <div class="mainContainer">
+    <body>
     
-    <div class="intro">
-      <h1 class="scrollIndicator">Scroll</h1>
-      <video>
-        <source id="video-source" src="name-fade.mp4">
-      </video>
-    </div>
-    <section id="starsBackground">
-      <div class="background-container">
-        <div class="stars"></div>
-        <div class="twinkling"></div>
-        <div class="aboutMeContainer">
-          <p class="popout">
-            <span>A</span>
-            <span>B</span>
-            <span>O</span>
-            <span>U</span>
-            <span>T</span>
-            <span class="spanm">M</span>
-            <span>E</span>
-          </p>
-          <p class="aboutMeText">
-            I'm a Computer Science major at Iowa State University and a Software Engineer at Maverick Software Consulting. 
-            After I graduate in Spring 2023, I will pursue a career in Software Engineering.
-          </p>
-          <button class="resumeButton" onclick="location.href='Resume2022-Angelo_Bellizzi.pdf';" >View Resume</button>
-        </div>
-
-        <div class="projectsContainer">
-          <p class="popoutProjects">
-            <span>P</span>
-            <span>R</span>
-            <span>O</span>
-            <span>J</span>
-            <span>E</span>
-            <span>C</span>
-            <span>T</span>
-            <span>S</span>
-          </p>
-          <div class="projectsButtonWrap">
-            <button onclick="location.href='https://student-tools-project.herokuapp.com/';" class="projectsButtonTop">Student Tools</button>
-            <button onclick="location.href='https://github.com/abellizzi1/WERQOUT-App';" class="projectsButtonW">WERQOUT</button>
-            <button onclick="location.href='https://github.com/abellizzi1/Pokemon-C';" class="projectsButtonP">Pokemon</button>
-            <button onclick="location.href='https://github.com/abellizzi1';" class="projectsGitButton">Github</button>
-          </div>
-          <h1 class="studentToolsDescription">Responsive MERN website designed for students and group projects</h1>
-          <img class="studentToolsImage" src="graduation-cap.png" alt="Graduation Cap">
-          <h1 class="werqoutDescription">Android app designed for creating and managing gym communities</h1>
-          <img class="werqoutImage" src="werqout-pic.png" alt="WERQOUT App">
-          <h1 class="pokemonDescription">Pokemon game written in C and C++ that is played in the linux terminal</h1>
-          <img class="pokemonImage" src="pokemon-pic.png" alt="Pokemon Game">
-          
-        </div>
-
-        <div class="skillsContainer">
-          <p class="popoutSkills">
-            <span>S</span>
-            <span>K</span>
-            <span>I</span>
-            <span>L</span>
-            <span>L</span>
-            <span>S</span>
-          </p>
-
-          <div>
-            <ul class="columns" data-columns="2">
-                <li>Java</li>
-                <li>C/C++</li>
-                <li>SQL</li>
-                <li>HTML</li>
-                <li>Javascript</li>
-                <li>CSS</li>
-                <li>Exposure to Assembly</li>
-            </ul>
-        </div>
-
-
-        <div class="contactContainer">
-          <p class="popoutContact">
-            <span>C</span>
-            <span>O</span>
-            <span>N</span>
-            <span>T</span>
-            <span>A</span>
-            <span>C</span>
-            <span>T</span>
-          </p>
-
-          <div class="contactListContainer">
-            <div class="contactListItem">
-              <img class="gmailImage" src="gmail-logo.png" alt="Gmail Logo">
-              <p class="contactText">abelliz734@gmail.com</p>
-            </div>
-            <div class="contactListItem">
-              <img class="linkedinImage" src="linkedin-logo.png" alt="LinkedIn Logo">
-              <button class="linkedinButton" onclick="location.href='https://www.linkedin.com/in/angelo-bellizzi-70751b215';">Click Here</button>
-            </div>
-          </div>
-
-        </div>
-      
+      <div class="intro">
+        <h1 class="scrollIndicator">Scroll</h1>
+        <video>
+          <source id="video-source" src="name-fade.mp4">
+        </video>
       </div>
-    </section>
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
-      integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"
-      integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"
-      integrity="sha256-31FC/OT6XpfjAhj9FuXjw5/wPXXawCAjJQ29E23/XPk="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
-      crossorigin="anonymous"
-    ></script>
-    <script src="app.js"></script>
-  </body>
+      <section class="starsBack" id="starsBackground">
+        <div class="background-container">
+          <div class="stars"></div>
+          <div class="twinkling"></div>
+          <div class="aboutMeContainer">
+            <p class="popout">
+              <span>A</span>
+              <span>B</span>
+              <span>O</span>
+              <span>U</span>
+              <span>T</span>
+              <span class="spanm">M</span>
+              <span>E</span>
+            </p>
+            <p class="aboutMeText">
+              I'm a Computer Science major at Iowa State University and a Software Engineer at Maverick Software Consulting. 
+              After I graduate in Spring 2023, I will pursue a career in Software Engineering.
+            </p>
+            <button class="resumeButton" onclick="location.href='Resume2022-Angelo_Bellizzi.pdf';" >View Resume</button>
+          </div>
+  
+          <div class="projectsContainer">
+            <p class="popoutProjects">
+              <span>P</span>
+              <span>R</span>
+              <span>O</span>
+              <span>J</span>
+              <span>E</span>
+              <span>C</span>
+              <span>T</span>
+              <span>S</span>
+            </p>
+            <div class="projectsButtonWrap">
+              <button onclick="location.href='https://student-tools-project.herokuapp.com/';" class="projectsButtonTop">Student Tools</button>
+              <button onclick="location.href='https://github.com/abellizzi1/WERQOUT-App';" class="projectsButtonW">WERQOUT</button>
+              <button onclick="location.href='https://github.com/abellizzi1/Pokemon-C';" class="projectsButtonP">Pokemon</button>
+              <button onclick="location.href='https://github.com/abellizzi1';" class="projectsGitButton">Github</button>
+            </div>
+            <h1 class="studentToolsDescription">Responsive MERN website designed for students and group projects</h1>
+            <img class="studentToolsImage" src="graduation-cap.png" alt="Graduation Cap">
+            <h1 class="werqoutDescription">Android app designed for creating and managing gym communities</h1>
+            <img class="werqoutImage" src="werqout-pic.png" alt="WERQOUT App">
+            <h1 class="pokemonDescription">Pokemon game written in C and C++ that is played in the linux terminal</h1>
+            <img class="pokemonImage" src="pokemon-pic.png" alt="Pokemon Game">
+            
+          </div>
+  
+          <div class="skillsContainer">
+            <p class="popoutSkills">
+              <span>S</span>
+              <span>K</span>
+              <span>I</span>
+              <span>L</span>
+              <span>L</span>
+              <span>S</span>
+            </p>
+  
+            <div>
+              <ul class="columns" data-columns="2">
+                  <li>Java</li>
+                  <li>C/C++</li>
+                  <li>SQL</li>
+                  <li>HTML</li>
+                  <li>Javascript</li>
+                  <li>CSS</li>
+                  <li>Exposure to Assembly</li>
+              </ul>
+          </div>
+  
+  
+          <div class="contactContainer">
+            <p class="popoutContact">
+              <span>C</span>
+              <span>O</span>
+              <span>N</span>
+              <span>T</span>
+              <span>A</span>
+              <span>C</span>
+              <span>T</span>
+            </p>
+  
+            <div class="contactListContainer">
+              <div class="contactListItem">
+                <img class="gmailImage" src="gmail-logo.png" alt="Gmail Logo">
+                <p class="contactText">abelliz734@gmail.com</p>
+              </div>
+              <div class="contactListItem">
+                <img class="linkedinImage" src="linkedin-logo.png" alt="LinkedIn Logo">
+                <button class="linkedinButton" onclick="location.href='https://www.linkedin.com/in/angelo-bellizzi-70751b215';">Click Here</button>
+              </div>
+            </div>
+  
+          </div>
+        
+        </div>
+      </section>
+  
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+        integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c="
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"
+        integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI="
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"
+        integrity="sha256-31FC/OT6XpfjAhj9FuXjw5/wPXXawCAjJQ29E23/XPk="
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+        crossorigin="anonymous"
+      ></script>
+      <script src="app.js"></script>
+    </body>
+  </div>
+  
 </html>

@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
+  .mainContainer {
+    overflow-y:hidden;
+  }
   
   .intro {
     height: 100vh;
@@ -379,6 +382,10 @@ $back: purple;
       display: block;
         z-index: 0;
       
+  }
+
+  .starsBack {
+    height:100%;
   }
   
   .twinkling{
@@ -884,7 +891,11 @@ $back: purple;
   }
 
   .background-container {
-    height:3150px;
+    height:2400px;
+  }
+
+  .mainContainer {
+    height:2400px;
   }
 
   .popout{
@@ -986,6 +997,15 @@ $back: purple;
 }
 
 @media (max-width:470px) {
+
+  .mainContainer {
+    height:2000px;
+  }
+
+  .background-container {
+    height:2000px;
+  }
+
   .popout{
     font-size: 34px;
     padding: 80px;

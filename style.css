@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.mainContainer {
+  overflow-y: hidden;
+}
+
 .intro {
   height: 100vh;
   z-index: 2;
@@ -403,6 +407,10 @@ section h1 {
   right: 0;
   display: block;
   z-index: 0;
+}
+
+.starsBack {
+  height: 100%;
 }
 
 .twinkling {
@@ -875,7 +883,10 @@ li {
     margin-top: 100px;
   }
   .background-container {
-    height: 3150px;
+    height: 2400px;
+  }
+  .mainContainer {
+    height: 2400px;
   }
   .popout {
     font-size: 50px;
@@ -955,6 +966,12 @@ li {
   }
 }
 @media (max-width: 470px) {
+  .mainContainer {
+    height: 2000px;
+  }
+  .background-container {
+    height: 2000px;
+  }
   .popout {
     font-size: 34px;
     padding: 80px;
