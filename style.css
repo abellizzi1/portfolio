@@ -430,7 +430,7 @@ section h1 {
 .studentToolsDescription {
   position: absolute;
   color: white;
-  right: 5%;
+  right: 10%;
   font-size: 40px;
   text-align: center;
   overflow-wrap: break-word;
@@ -456,7 +456,7 @@ section h1 {
 .werqoutDescription {
   position: absolute;
   color: white;
-  right: 5%;
+  right: 10%;
   font-size: 40px;
   text-align: center;
   overflow-wrap: break-word;
@@ -482,7 +482,7 @@ section h1 {
 .pokemonDescription {
   position: absolute;
   color: white;
-  right: 5%;
+  right: 10%;
   font-size: 40px;
   text-align: center;
   overflow-wrap: break-word;
@@ -816,11 +816,21 @@ li {
   background-color: #084685;
 }
 
+@media (max-width: 1550px) {
+  .studentToolsDescription {
+    right: 5%;
+  }
+  .werqoutDescription {
+    right: 5%;
+  }
+  .pokemonDescription {
+    right: 5%;
+  }
+}
 @media (max-width: 1280px) {
   .studentToolsDescription {
     font-size: 30px;
     width: 330px;
-    right: 5%;
   }
   .studentToolsImage {
     margin-top: -390px;
@@ -828,7 +838,6 @@ li {
   .werqoutDescription {
     font-size: 30px;
     width: 330px;
-    right: 5%;
   }
   .werqoutImage {
     margin-top: -420px;
@@ -836,7 +845,6 @@ li {
   .pokemonDescription {
     font-size: 30px;
     width: 330px;
-    right: 5%;
   }
   .pokemonImage {
     margin-top: -360px;

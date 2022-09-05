@@ -409,7 +409,7 @@ $back: purple;
   .studentToolsDescription {
     position:absolute;
     color:white;
-    right:5%;
+    right:10%;
     font-size: 40px;
     text-align: center;
     overflow-wrap:break-word;
@@ -435,7 +435,7 @@ $back: purple;
   .werqoutDescription {
     position:absolute;
     color:white;
-    right:5%;
+    right:10%;
     font-size: 40px;
     text-align: center;
     overflow-wrap:break-word;
@@ -461,7 +461,7 @@ $back: purple;
   .pokemonDescription {
     position:absolute;
     color:white;
-    right:5%;
+    right:10%;
     font-size: 40px;
     text-align: center;
     overflow-wrap:break-word;
@@ -804,11 +804,24 @@ $back: purple;
   background-color:#084685;
 }
 
+@media (max-width:1550px) {
+  .studentToolsDescription {
+    right:5%;
+  }
+
+  .werqoutDescription {
+    right:5%;
+  }
+
+  .pokemonDescription {
+    right:5%;
+  }
+}
+
 @media (max-width: 1280px) {
   .studentToolsDescription {
     font-size:30px;
     width:330px;
-    right:5%;
   }
 
   .studentToolsImage {
@@ -818,7 +831,6 @@ $back: purple;
   .werqoutDescription {
     font-size:30px;
     width:330px;
-    right:5%;
   }
 
   .werqoutImage {
@@ -828,7 +840,6 @@ $back: purple;
   .pokemonDescription {
     font-size:30px;
     width:330px;
-    right:5%;
   }
 
   .pokemonImage {
