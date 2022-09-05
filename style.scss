@@ -88,6 +88,55 @@ $back: purple;
     }
 	
 }
+
+.popoutContact{
+	font-family: Futura, sans-serif;
+	font-weight: 900;
+	font-size: 80px;
+	padding: 80px;
+    position:relative;
+    z-index:3;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    width:760px;
+
+	@keyframes ani{
+		0%{
+			transform: translate3d(0,0,0);
+			text-shadow: 0em 0em 0 $back;
+			color: $front;
+		}
+		30%{
+			transform: translate3d(0,0,0);
+			text-shadow: 0em 0em 0 $back;
+			color: $front;
+		}
+		70%{
+			transform: translate3d(0.08em,-0.08em,0);
+			text-shadow: -0.08em 0.08em $back;
+			color: $front;
+		}
+		100%{
+			transform: translate3d(0.08em,-0.08em,0);
+			text-shadow: -0.08em 0.08em $back;
+			color: $front;
+		}
+	}
+	span{
+		position: relative;
+		display: inline-block;
+		animation: ani $t infinite alternate $e;
+		@for $i from 1 through $n{
+			&:nth-last-child(#{$i}n){ animation-delay: -$t*$i/$n/2;}
+		}
+
+        
+	}
+    .spanm {
+        margin-left:40px;
+    }
+	
+}
   
   .aboutMeText {
       position: relative;
@@ -142,6 +191,11 @@ $back: purple;
 
   .skillsContainer {
     margin-top:200px;
+    margin-bottom:0;
+  }
+
+  .contactContainer {
+    margin-top:300px;
     margin-bottom:0;
   }
 
@@ -620,3 +674,75 @@ $back: purple;
     overflow-wrap:break-word;
       font-family: sans-serif;
   }
+
+  .contactListContainer {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:500px;
+    height:auto;
+    position:relative;
+    z-index:3;
+    margin-top:-100px;
+  }
+
+  .contactListItem {
+    display:inline-block;
+  }
+
+  .gmailImage {
+    position:relative;
+    display:inline-block;
+    z-index:3;
+    width:70px;
+    transition: .2s ease;
+  }
+
+  .linkedinImage {
+    position:relative;
+    z-index:3;
+    width:70px;
+    transition: .2s ease;
+    margin-top:20px;
+  }
+  
+  .contactText {
+    color:white;
+    display:inline-block;
+    font-size:39px;
+    margin-left:30px;
+    overflow-wrap:break-word;
+      font-family: sans-serif;
+      vertical-align: top;
+  }
+
+.linkedinButton {
+  background-color:#0a66c2;
+    color:white;
+    position:relative;
+    display:inline-block;
+    left:160px;
+    width:270px;
+    top:13px;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    border:none;
+    border-radius:10px;
+    z-index:3;
+    padding: 16px 16px;
+    cursor:pointer;
+    letter-spacing: .15rem;
+    transition: .2s ease;
+    margin-bottom:0;
+    margin-top:0;
+    font-family: sans-serif;
+    font-weight:bold;
+}
+
+.linkedinButton:hover {
+  box-shadow: 0 0 0 3px white,
+              inset 0 0 0 1px #fff;
+}
+
+.linkedinButton:active {
+  background-color:#084685;
+}
