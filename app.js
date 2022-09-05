@@ -44,19 +44,6 @@ setInterval(() => {
 }, 33.3);
 
 
-const starBackground = document.querySelector('#starsBackground');
-const scrollAmount = 0;
-window.addEventListener('scroll', (event) => {
-  const { top } = starBackground.getBoundingClientRect();
-  const starsInView = top - window.innerHeight < scrollAmount;
-  if (starsInView) {
-    intro.style.opacity=0;
-  }
-  else {
-    intro.style.opacity=1;
-  }
-});
-
 const studentToolsDescription = document.querySelector(".studentToolsDescription");
 const studentToolsImage = document.querySelector(".studentToolsImage");
 const projectsButtonTop = document.querySelector(".projectsButtonTop");
@@ -92,3 +79,18 @@ projectsButtonP.onmouseout = function () {
   pokemonDescription.style.opacity = 0;
   pokemonImage.style.opacity = 0;
 }
+
+const starBackground = document.querySelector('#starsBackground');
+const scrollAmount = 0;
+window.addEventListener('scroll', (event) => {
+  const { top } = starBackground.getBoundingClientRect();
+  const starsInView = top - window.innerHeight < scrollAmount;
+  console.log(top);
+  if (starsInView) {
+    intro.style.opacity=0;
+  }
+  else  {
+    intro.style.opacity=1;
+  }
+});
+

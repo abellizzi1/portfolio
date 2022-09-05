@@ -19,7 +19,7 @@
 }
 
 .aboutMeContainer {
-  margin-top: 3350px;
+  margin-top: 3300px;
 }
 
 .aboutMeHeaderOld {
@@ -334,7 +334,7 @@ section h1 {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 10000px;
+  height: 5700px;
   z-index: 0;
 }
 
@@ -366,7 +366,7 @@ section h1 {
 .studentToolsDescription {
   position: absolute;
   color: white;
-  margin-left: 65%;
+  right: 5%;
   font-size: 40px;
   text-align: center;
   overflow-wrap: break-word;
@@ -392,7 +392,7 @@ section h1 {
 .werqoutDescription {
   position: absolute;
   color: white;
-  margin-left: 65%;
+  right: 5%;
   font-size: 40px;
   text-align: center;
   overflow-wrap: break-word;
@@ -418,7 +418,7 @@ section h1 {
 .pokemonDescription {
   position: absolute;
   color: white;
-  margin-left: 65%;
+  right: 5%;
   font-size: 40px;
   text-align: center;
   overflow-wrap: break-word;
@@ -435,7 +435,7 @@ section h1 {
   position: absolute;
   z-index: 3;
   width: 35%;
-  margin-top: -360px;
+  margin-top: -400px;
   margin-left: 2%;
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -750,4 +750,146 @@ li {
 
 .linkedinButton:active {
   background-color: #084685;
+}
+
+@media (max-width: 1280px) {
+  .studentToolsDescription {
+    font-size: 30px;
+    width: 330px;
+    right: 5%;
+  }
+  .studentToolsImage {
+    margin-top: -390px;
+  }
+  .werqoutDescription {
+    font-size: 30px;
+    width: 330px;
+    right: 5%;
+  }
+  .werqoutImage {
+    margin-top: -420px;
+  }
+  .pokemonDescription {
+    font-size: 30px;
+    width: 330px;
+    right: 5%;
+  }
+  .pokemonImage {
+    margin-top: -360px;
+  }
+}
+@media (max-width: 1040px) {
+  .studentToolsDescription {
+    right: 0;
+    width: 270px;
+  }
+  .studentToolsImage {
+    margin-top: -340px;
+  }
+  .werqoutDescription {
+    right: 0;
+    width: 270px;
+  }
+  .werqoutImage {
+    margin-top: -360px;
+  }
+  .pokemonDescription {
+    right: 0;
+    width: 270px;
+  }
+  .pokemonImage {
+    margin-top: -320px;
+    width: 30%;
+  }
+  .aboutMeText {
+    font-size: 30px;
+  }
+  .resumeButton {
+    font-size: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .intro {
+    height: 0;
+  }
+  .scrollIndicator {
+    font-size: 0;
+  }
+  .aboutMeContainer {
+    margin-top: 100px;
+  }
+  .background-container {
+    height: 3150px;
+  }
+  .popout {
+    font-size: 50px;
+    padding: 80px;
+    width: 590px;
+    margin-bottom: -70px;
+  }
+  .popout .spanm {
+    margin-left: 40px;
+  }
+  .popoutSkills {
+    font-size: 50px;
+    width: 450px;
+  }
+  .popoutContact {
+    font-size: 50px;
+    width: 540px;
+  }
+  .aboutMeText {
+    margin-top: 50px;
+    margin-bottom: -60px;
+  }
+  .studentToolsDescription {
+    font-size: 0;
+  }
+  .studentToolsImage {
+    width: 0;
+  }
+  .werqoutDescription {
+    font-size: 0;
+  }
+  .werqoutImage {
+    width: 0;
+  }
+  .pokemonDescription {
+    font-size: 0;
+  }
+  .pokemonImage {
+    width: 0;
+  }
+  .contactListContainer {
+    margin-top: -60px;
+  }
+}
+@media (max-width: 615px) {
+  .aboutMeText {
+    margin-top: 120px;
+    margin-bottom: -100px;
+  }
+  .columns li {
+    font-size: 35px;
+  }
+  .columns {
+    width: 450px;
+  }
+  .contactText {
+    font-size: 32px;
+  }
+  .contactListContainer {
+    width: 430px;
+  }
+  .linkedinButton {
+    font-size: 32px;
+    padding: 12px 8px;
+    top: 10px;
+  }
+  .gmailImage {
+    width: 60px;
+  }
+  .linkedinImage {
+    width: 60px;
+  }
 }/*# sourceMappingURL=style.css.map */
